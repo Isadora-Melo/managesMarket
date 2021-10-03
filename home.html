@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Desenvolvimento Web II</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize"> <!--Normaliza a página dos navegadores -->
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><!--Importação de fonte-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Importação de fonte-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"><!--Importação de fonte-->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+
+			<a href="home.html" class="grid-4">
+				<img src="img/logo-mercado.png" alt="Logo mercado verde">
+			</a>
+
+			<nav class="grid-12 header_menu">
+
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="estoque.html">Estoque</a></li>
+					<li><a href="vendas.html">Vendas</a></li>
+					<li><a href="entrada.html">Entrada</a></li>
+					<li><a href="relatorios.html">Relatórios</a></li>
+				</ul>
+
+			</nav>
+
+		</div>
+	</header>
+
+	<section class="realizaVendas">
+
+		<div class="container">
+			
+			<h2>Vendas</h2>
+
+			<div class="quadrado container">
+				<h3>Nova Venda</h3>		
+				<p class="pVendas1">Preencha os campos para realizar uma nova venda</p>	
+
+				<form method="post">
+
+					<div class="div-1">
+						<div class="div-2">
+							<label class="label">Produto</label>
+							<input type="text" name="produto" class="input">
+						</div>
+						<div class="div-3">
+							<label class="label">Quantidade</label>
+							<input type="number" name="quantidadeProduto" class="inputQuantidadeProduto" value="0">	
+						</div>
+					</div>		
+			
+					<button class="btn btn-1">Adicionar Produto</button>
+
+					<input type="text" name="total" class="inputTotal" value="Valor Total:">
+
+					<p class="pVendas2">Para completar a transação, clique aqui!</p>
+					<button class="btn btn-2">Efetuar Venda</button>
+
+				</form>
+			</div>
+
+		</div>
+		
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+
+			<h3 class="h3Footer">Contato</h3>
+			<p class="pFooter">+55 37 99626-3048</p>
+			<p class="pFooter">mercadoverde@gmail.com</p>
+			<p class="pFooter">Rua Azul - Formiga-MG</p>
+
+			<h3 class="h3Footer h3Links">Links</h3>
+
+			<div class="footer_menu grid-1">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="estoque.html">Estoque</a></li>
+					<li><a href="vendas.html">Vendas</a></li>
+					<li><a href="entrada.html">Entrada</a></li>
+					<li><a href="relatorios.html">Relatórios</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</footer>
+		  
+
+		</body>
+		</html>

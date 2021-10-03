@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Desenvolvimento Web II</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize"> <!--Normaliza a página dos navegadores -->
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><!--Importação de fonte-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Importação de fonte-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"><!--Importação de fonte-->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+
+			<a href="home.html" class="grid-4">
+				<img src="img/logo-mercado.png" alt="Logo mercado verde">
+			</a>
+
+			<nav class="grid-12 header_menu">
+
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="estoque.html">Estoque</a></li>
+					<li><a href="vendas.html">Vendas</a></li>
+					<li><a href="entrada.html">Entrada</a></li>
+					<li><a href="relatorios.html">Relatórios</a></li>
+				</ul>
+
+			</nav>
+
+		</div>
+	</header>
+
+	<section>
+		
+		<div class="container">
+
+			<h2>Vendas</h2>
+			<p>Preencha o periodo de tempo que deseja buscar as vendas!</p>
+
+			<div class="divBuscaProdutoVendas">
+				<div>
+					<input type="date" name="inputDataInicial" class="input inputVendas">
+					<input type="date" name="inputDataFinal" class="input inputVendas">
+				</div>
+				<button class="btn">Buscar Vendas</button>
+			</div>
+		
+			<hr class="traco"> <!-- Traço -->
+
+			<div class="tabelaEstoqueVendas">
+			<table class="tabelaListrada">
+				<tr>
+					<th>Data</th>
+					<th>Total Venda</th>
+					<th>Lucro Líquido</th>
+					<th>Porcentagem</th>
+					<th>Detalhes</th>
+					<th>Cancelar</th>
+				</tr>
+				<tr>
+					<td>02/10/2021</td>
+					<td>51.60</td>
+					<td>40.00</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="detalhesVendas.html">Detalhes</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>02/10/2021</td>
+					<td>51.60</td>
+					<td>40.00</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="detalhesVendas.html">Detalhes</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>02/10/2021</td>
+					<td>51.60</td>
+					<td>40.00</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="detalhesVendas.html">Detalhes</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>02/10/2021</td>
+					<td>51.60</td>
+					<td>40.00</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="detalhesVendas.html">Detalhes</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>02/10/2021</td>
+					<td>51.60</td>
+					<td>40.00</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="detalhesVendas.html">Detalhes</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+			</table>
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+
+			<h3 class="h3Footer">Contato</h3>
+			<p class="pFooter">+55 37 99626-3048</p>
+			<p class="pFooter">mercadoverde@gmail.com</p>
+			<p class="pFooter">Rua Azul - Formiga-MG</p>
+
+			<h3 class="h3Footer h3Links">Links</h3>
+
+			<div class="footer_menu grid-1">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="estoque.html">Estoque</a></li>
+					<li><a href="vendas.html">Vendas</a></li>
+					<li><a href="entrada.html">Entrada</a></li>
+					<li><a href="relatorios.html">Relatórios</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</footer>
+		  
+
+		</body>
+		</html>

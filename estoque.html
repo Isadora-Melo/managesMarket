@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Desenvolvimento Web II</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize"> <!--Normaliza a página dos navegadores -->
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><!--Importação de fonte-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Importação de fonte-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"><!--Importação de fonte-->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+
+			<a href="home.html" class="grid-4">
+				<img src="img/logo-mercado.png" alt="Logo mercado verde">
+			</a>
+
+			<nav class="grid-12 header_menu">
+
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="estoque.html">Estoque</a></li>
+					<li><a href="vendas.html">Vendas</a></li>
+					<li><a href="entrada.html">Entrada</a></li>
+					<li><a href="relatorios.html">Relatórios</a></li>
+				</ul>
+
+			</nav>
+
+		</div>
+	</header>
+
+	<section>
+		
+		<div class="container">
+
+			<h2>Estoque</h2>
+			<p>Clique no botão para cadastrar um novo produto!</p>
+			<button class="btn"><a href="cadastraProduto.html">Cadastrar novo produto</a></button>
+			<hr class="traco"> <!-- Traço -->
+				
+			<div class="divBuscaProdutoEstoque">
+				<div>
+					<label class="label">Nome do produto</label>
+					<input type="text" name="buscaProdutos" class="input">
+				</div>
+				<button class="btn btn-busca">Buscar Produto</button>
+			</div>
+
+			<h3>Produtos</h3>
+
+			<div class="tabelaEstoqueVendas">
+			<table class="tabelaListrada">
+				<tr>
+					<th>Nome</th>
+					<th>Quantidade</th>
+					<th>Preço Compra</th>
+					<th>Preço Venda</th>
+					<th>Porcentagem</th>
+					<th>Editar</th>
+					<th>Excluir</th>
+				</tr>
+				<tr>
+					<td>Arroz</td>
+					<td>10</td>
+					<td>8.80</td>
+					<td>21.50</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="editaProduto.html">Editar</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>Feijão</td>
+					<td>10</td>
+					<td>8.80</td>
+					<td>21.50</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="editaProduto.html">Editar</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>Sal</td>
+					<td>10</td>
+					<td>8.80</td>
+					<td>21.50</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="editaProduto.html">Editar</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>Farinha</td>
+					<td>10</td>
+					<td>8.80</td>
+					<td>21.50</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="editaProduto.html">Editar</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>Açúcar</td>
+					<td>10</td>
+					<td>8.80</td>
+					<td>21.50</td>
+					<td>40%</td>
+					<td><button class="btn btn-editar"><a href="editaProduto.html">Editar</a></button></td>
+					<td><button class="btn btn-excluir">Excluir</button></td>
+				</tr>
+			</table>
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+
+			<h3 class="h3Footer">Contato</h3>
+			<p class="pFooter">+55 37 99626-3048</p>
+			<p class="pFooter">mercadoverde@gmail.com</p>
+			<p class="pFooter">Rua Azul - Formiga-MG</p>
+
+			<h3 class="h3Footer h3Links">Links</h3>
+
+			<div class="footer_menu grid-1">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="estoque.html">Estoque</a></li>
+					<li><a href="vendas.html">Vendas</a></li>
+					<li><a href="entrada.html">Entrada</a></li>
+					<li><a href="relatorios.html">Relatórios</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</footer>
+		  
+
+		</body>
+		</html>

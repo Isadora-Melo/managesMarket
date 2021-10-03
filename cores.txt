@@ -1,0 +1,42 @@
+--------- CORES DO SITE ---------
+				#091d26 azul escuro
+				#dfb564 amarelo
+				#52809d azul claro
+				#a73a21 vermelho
+				#715c4e bege
+---------------------------------
+
+
+============================== REQUISITOS ===================================
+
+* Tela para fazer vendas
+* Tela para ver vendas feitas
+* Tela para adicionar estoques
+* Tela para consultar o estoque
+* Tela para fazer relatório (opcional)
+* Tela para cadastrar novos usuários
+	- Nível 1: Vendedor
+	- Nível 2: Gerente
+	- Nível 3: Administrador
+
+
+- Vendedor
+	* Possui acesso a tela para fazer vendas e ver as que foram feitas
+	* Possui acesso a tela de consulta o estoque
+
+- Gerente
+	* Possui acesso a todas as telas, exceto:
+		- Cadastrar os usuários
+		- Relatórios
+
+- Administração
+	* Possui acesso a todas as telas
+
+	=============================================================================
+
+
+	Coisas que são comum em todos
+
+	inputs
+	btn
+	h2 e h3
