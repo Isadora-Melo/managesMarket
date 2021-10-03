@@ -1,1 +1,109 @@
-cadastraProduto
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Desenvolvimento Web II</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize">
+    <!--Normaliza a página dos navegadores -->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Importação de fonte-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Importação de fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!--Importação de fonte-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <a href="home.html" class="grid-4">
+                <img src="img/logo-mercado.png" alt="Logo mercado verde">
+            </a>
+
+            <nav class="grid-12 header_menu">
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="vendas.html">Vendas</a></li>
+                    <li><a href="entrada.html">Entrada</a></li>
+                    <li><a href="relatorios.html">Relatórios</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <Section>
+        <div class="container">
+            <h2>Cadastrar Produto</h2>
+
+            <div class="quadrado">
+                <h3>Preencha os campos</h3>
+                <div class="divImgLapis">
+                    <img src="img/lapis.png" alt="lápis" class="imgLapis">
+                </div>
+
+                <div class="adicionaProdutos">
+
+                    <div class="adicionaProdutoNomeQtd">
+                        <div>
+                            <label class="label">Nome</label>
+                            <input type="text" name="nomeCadastraProduto" class="input inputCadastraProdutos">
+                        </div>
+                        <div>
+                            <label class="label">Quantidade no Estoque</label>
+                            <input type="text" name="qtdEstoqueCadastraProduto" class="input inputCadastraProdutos">
+                        </div>
+                    </div>
+                    <div class="adicionaProdutoPrecoCompraVenda">
+                        <div>
+                            <label class="label">Preço de Compra</label>
+                            <input type="text" name="precoCompraCadastraProduto" class="input inputCadastraProdutos">
+                        </div>
+                        <div>
+                            <label class="label">Preco de Venda</label>
+                            <input type="text" name="precoVendaCadastraProduto" class="input inputCadastraProdutos">
+                        </div>
+                    </div>
+
+
+                    <p>Clique no botão para cadastrar o produto no estoque!</p>
+                    <button class="btn">Cadastrar produto</button>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <footer class="footer">
+        <div class="container">
+
+            <h3 class="h3Footer">Contato</h3>
+            <p class="pFooter">+55 37 99626-3048</p>
+            <p class="pFooter">mercadoverde@gmail.com</p>
+            <p class="pFooter">Rua Azul - Formiga-MG</p>
+
+            <h3 class="h3Footer h3Links">Links</h3>
+
+            <div class="footer_menu grid-1">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="vendas.html">Vendas</a></li>
+                    <li><a href="entrada.html">Entrada</a></li>
+                    <li><a href="relatorios.html">Relatórios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
