@@ -14,6 +14,11 @@ const produtos = [
         "nome": "Arroz maná",
         "value": "3",
         "preco": "13.00"
+    },
+    {
+        "nome": "Café Robson",
+        "value": "3",
+        "preco": "8.50"
     }
 ]
 
@@ -41,6 +46,7 @@ function PaginaCarregada() {
     CarregaPrimeiroSelect()
 }
 
+//Verifica se ja existe um produto selecionado para o campo quantidade, se sim e chamado a função de calcular valor total
 function verificaSelectCalculaTotalVenda(event){
     let divPai =  event.target.parentNode.parentNode;
     let select = divPai.querySelector("div.div-2 > select")
@@ -49,6 +55,7 @@ function verificaSelectCalculaTotalVenda(event){
     }
 }
 
+//Calcula o valor total da venda
 function calculaValorTotalVenda(event) {
     let valorTotal = 0;
     let quantidade = document.querySelectorAll("#produtosVenda > div > div.div-3 > input");
@@ -57,9 +64,10 @@ function calculaValorTotalVenda(event) {
         element = element.options[element.selectedIndex];
         valorTotal += parseFloat(element.getAttribute('preco')) * parseInt(quantidade[i].value)
     })
-    document.querySelector("body > section > div > div > form > input").value = `Valor Total: ${valorTotal}`
+    document.querySelector("body > section > div > div > form > input").value = `Valor Total: ${valorTotal.toFixed(2)}`
 }
 
+//Cria os options dos selects a partir do objeto produtos 
 function criaOptionSelectVenda(produtos){
     let options = [];
     produtos.forEach(element => {
@@ -72,6 +80,7 @@ function criaOptionSelectVenda(produtos){
     return options;
 }
 
+// constroi o select default do sistema
 function CarregaPrimeiroSelect () {
     let select = document.querySelector("#produtosVenda > div > div.div-2 > select");
     let options = criaOptionSelectVenda(produtos)
@@ -80,18 +89,21 @@ function CarregaPrimeiroSelect () {
     })
 }
 
+//função generica de construção de elemento com classe
 function novoElemento(tagName, className){
     const elem = document.createElement(tagName)
     elem.className = className
     return elem
 }
 
+//função generica de criação de label
 function criaLabel(nome) {
 	const label = novoElemento('label', 'label');
 	label.innerHTML = nome;
 	return label;
 }
 
+//cria o select de produto 
 function CriarInputProdutoVenda() {
     let select = novoElemento('select', 'input');
 	select.setAttribute('name', 'produto');
@@ -109,6 +121,7 @@ function CriarInputProdutoVenda() {
     return select;
 }
 
+// cria o input de venda
 function CriarInputQuantidadeVenda() {
 	let input = novoElemento('input', 'inputQuantidadeProduto');
 	input.setAttribute('type', 'number');
@@ -117,6 +130,7 @@ function CriarInputQuantidadeVenda() {
     return input;
 }
 
+//Função que adiciona um campo de seleção de produto e quantidade na tela de venda 
 function AdicionarProdutoVenda(event) {
 	event.preventDefault();
 	let usuarioLogin = document.querySelector("div#produtosVenda");
