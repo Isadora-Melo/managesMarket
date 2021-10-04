@@ -44,21 +44,23 @@
 				<p class="pVendas1">Preencha os campos para realizar uma nova venda</p>	
 
 				<form method="post">
+					<div id="produtosVenda">
+						<div class="div-1">
+							<div class="div-2">
+								<label class="label">Produto</label>
+								<select name="produto" class="input">
+									<option value="-1" disabled selected preco="0.0">Selecione</option>
+								</select>
+							</div>
+							<div class="div-3">
+								<label class="label">Quantidade</label>
+								<input type="number" name="quantidadeProduto" class="inputQuantidadeProduto" value="0">	
+							</div>
+						</div>		
+					</div>			
+					<button class="btn btn-1" id="botaoAdicionarProdutoVenda">Adicionar Produto</button>
 
-					<div class="div-1">
-						<div class="div-2">
-							<label class="label">Produto</label>
-							<input type="text" name="produto" class="input">
-						</div>
-						<div class="div-3">
-							<label class="label">Quantidade</label>
-							<input type="number" name="quantidadeProduto" class="inputQuantidadeProduto" value="0">	
-						</div>
-					</div>		
-			
-					<button class="btn btn-1">Adicionar Produto</button>
-
-					<input type="text" name="total" class="inputTotal" value="Valor Total:">
+					<input type="text" name="total" class="inputTotal" value="Valor Total:" readonly\>
 
 					<p class="pVendas2">Para completar a transação, clique aqui!</p>
 					<button class="btn btn-2">Efetuar Venda</button>
@@ -94,6 +96,6 @@
 		</div>
 	</footer>
 		  
-
+		<script src="js/home.js"></script>
 		</body>
 		</html>
