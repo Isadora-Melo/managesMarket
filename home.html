@@ -15,7 +15,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 	<!--Importação de fonte-->
 </head>
-
 <body>
 	<header class="header">
 		<div class="container">
@@ -42,29 +41,31 @@
 	<section class="realizaVendas">
 
 		<div class="container">
-
+			
 			<h2>Vendas</h2>
 
 			<div class="quadrado container">
-				<h3>Nova Venda</h3>
-				<p class="pVendas1">Preencha os campos para realizar uma nova venda</p>
+				<h3>Nova Venda</h3>		
+				<p class="pVendas1">Preencha os campos para realizar uma nova venda</p>	
 
 				<form method="post">
-
-					<div class="div-1">
-						<div class="div-2">
-							<label class="label">Produto</label>
-							<input type="text" name="produto" class="input">
-						</div>
-						<div class="div-3">
-							<label class="label">Quantidade</label>
-							<input type="number" name="quantidadeProduto" class="inputQuantidadeProduto" value="0">
+					<div id="produtosVenda">
+						<div class="div-1">
+							<div class="div-2">
+								<label class="label">Produto</label>
+								<select name="produto" class="input">
+									<option value="-1" disabled selected preco="0.0">Selecione</option>
+								</select>
+							</div>
+							<div class="div-3">
+								<label class="label">Quantidade</label>
+								<input type="number" name="quantidadeProduto" class="inputQuantidadeProduto" value="0">
+							</div>
 						</div>
 					</div>
+					<button class="btn btn-1" id="botaoAdicionarProdutoVenda">Adicionar Produto</button>
 
-					<button class="btn btn-1">Adicionar Produto</button>
-
-					<input type="text" name="total" class="inputTotal" value="Valor Total:">
+					<input type="text" name="total" class="inputTotal" value="Valor Total:" readonly\>
 
 					<p class="pVendas2">Para completar a transação, clique aqui!</p>
 					<button class="btn btn-2">Efetuar Venda</button>
@@ -73,7 +74,7 @@
 			</div>
 
 		</div>
-
+		
 	</section>
 
 
@@ -96,11 +97,10 @@
 					<li><a href="relatorios.html">Relatórios</a></li>
 				</ul>
 			</div>
-
+			
 		</div>
 	</footer>
-
-
-</body>
-
-</html>
+		  
+		<script src="js/home.js"></script>
+		</body>
+		</html>
